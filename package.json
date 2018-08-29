@@ -8,10 +8,10 @@
     "typings": "./dist/index.d.ts",
     "keywords": [
         "random",
-        "generator",
-        "uid",
-        "safe",
         "crypto",
+        "safe",
+        "uid",
+        "generator",
         "browser"
     ],
     "homepage": "https://github.com/rolandjitsu/uid",
