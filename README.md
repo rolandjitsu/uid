@@ -19,12 +19,12 @@ Additionally it comes bundled with TypeScript typings.
 ### Installation
 You can install this package from [NPM](https://www.npmjs.com):
 ```bash
-npm add webuid
+npm add crypto-uid
 ```
 
 Or with [Yarn](https://yarnpkg.com/en):
 ```bash
-yarn add webuid
+yarn add crypto-uid
 ```
 
 *NOTE*: [TypeScript](https://www.typescriptlang.org) type definitions are bundled with the package.
@@ -33,7 +33,7 @@ yarn add webuid
 ### Usage
 Generate a random UID:
 ```ts
-import {uid} from 'webuid';
+import uid from 'crypto-uid';
 const id = uid(6);
 ```
 

@@ -1,10 +1,10 @@
 {
-    "name": "uid",
+    "name": "crypto-uid",
     "version": "0.0.1",
     "description": "Cryptographically secure UIDs",
-    "main": "./dist/uid.umd.js",
-    "module": "./dist/uid.es5.js",
-    "es2015": "./dist/uid.js",
+    "main": "./dist/crypto-uid.umd.js",
+    "module": "./dist/crypto-uid.es5.js",
+    "es2015": "./dist/crypto-uid.js",
     "typings": "./dist/public-api.d.ts",
     "keywords": [
         "random",
@@ -26,7 +26,7 @@
     },
     "scripts": {
         "prebuild": "yarn run clean",
-        "build": "./scripts/build_package.sh uid",
+        "build": "./scripts/build_package.sh crypto-uid",
         "clean": "rm -rf dist out-tsc",
         "lint": "tslint -c tslint.json -p ./tsconfig.spec.json -t stylish",
         "lint:fix": "yarn run lint -- --fix",
@@ -45,6 +45,7 @@
         "babel-core": "^7.0.0-0",
         "babel-jest": "^23.4.0",
         "camelcase": "^4.1.0",
+        "conventional-changelog-cli": "^2.0.5",
         "jest": "^23.5.0",
         "rollup": "^0.65.0",
         "rollup-plugin-sourcemaps": "^0.4.2",
