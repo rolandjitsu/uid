@@ -22,7 +22,7 @@ function toBase64(bytes: Uint8Array) {
  * Generate a cryptographically secure random string
  * @param byteLength
  */
-export default function uid(byteLength: number) {
+export default function uid(byteLength: number = 12) {
     const bytes = getRandomBytes(byteLength);
     const base64 = toBase64(bytes);
     return base64.replace(/=+$/, '')

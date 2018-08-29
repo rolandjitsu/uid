@@ -21,6 +21,11 @@ it('should return a uid of the correct length', () => {
     expect(byteLength(id)).toBe(24);
 });
 
+it('should use 12 bytes as default length if not provided', () => {
+    const id = uid();
+    expect(byteLength(id)).toBe(16);
+});
+
 it('should not contain +, /, or =', () => {
     const id = uid(10000);
     expect(id.indexOf('+')).toBe(-1);
