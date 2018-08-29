@@ -5,7 +5,7 @@
     "main": "./dist/crypto-uid.umd.js",
     "module": "./dist/crypto-uid.es5.js",
     "es2015": "./dist/crypto-uid.js",
-    "typings": "./dist/public-api.d.ts",
+    "typings": "./dist/index.d.ts",
     "keywords": [
         "random",
         "generator",
