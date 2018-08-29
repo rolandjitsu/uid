@@ -2,6 +2,8 @@
 
 > A small package for generating cryptographically secure UIDs in the browser, safe for both cookie and URL usage.
 
+[![Travis (.org) branch](https://img.shields.io/travis/rolandjitsu/uid/master.svg?style=flat-square)](https://github.com/rolandjitsu/uid)
+
 This package is a mirror of [uid-safe](https://github.com/crypto-utils/uid-safe), but meant to be used in a browser env.
 Additionally it comes bundled with TypeScript typings.
 
