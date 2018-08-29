@@ -33,13 +33,17 @@
         "pretest:cov": "yarn run lint",
         "test:cov": "jest --coverage",
         "test": "jest --watch",
-        "precommit": "yarn test:cov",
         "release:prerelease": "./scripts/release.sh prerelease",
         "release": "./scripts/release.sh patch",
         "release:preminor": "./scripts/release.sh preminor",
         "release:minor": "./scripts/release.sh minor",
         "release:premajor": "./scripts/release.sh premajor",
         "release:major": "./scripts/release.sh major"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn test:cov"
+        }
     },
     "dependencies": {
         "tslib": "^1.9.0"

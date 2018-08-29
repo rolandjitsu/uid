@@ -5,7 +5,7 @@
 [![Travis (.org) branch](https://img.shields.io/travis/rolandjitsu/uid/master.svg?style=flat-square)](https://github.com/rolandjitsu/uid)
 
 This package is a mirror of [uid-safe](https://github.com/crypto-utils/uid-safe), but meant to be used in a browser env.
-Additionally it comes bundled with TypeScript typings.
+Additionally, it comes bundled with [TypeScript](https://www.typescriptlang.org) typings.
 
 
 # Table of Contents
@@ -27,8 +27,6 @@ Or with [Yarn](https://yarnpkg.com/en):
 yarn add crypto-uid
 ```
 
-*NOTE*: [TypeScript](https://www.typescriptlang.org) type definitions are bundled with the package.
-
 
 ### Usage
 Generate a random UID:
@@ -47,5 +45,4 @@ You can expect this lib to run wherever [Web Crypto API](https://developer.mozil
 --------------
 If you wish to contribute, please use the following guidelines:
 * Use [Conventional Commits](https://conventionalcommits.org)
-* Use `yarn test:cov` to ensure tests are still passing and there are no lint issues
 * Use `[ci skip]` in commit messages to skip a build
