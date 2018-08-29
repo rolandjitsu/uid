@@ -1,6 +1,6 @@
 {
     "name": "crypto-uid",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Cryptographically secure UIDs",
     "main": "./dist/crypto-uid.umd.js",
     "module": "./dist/crypto-uid.es5.js",
