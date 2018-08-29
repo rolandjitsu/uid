@@ -32,7 +32,14 @@
         "lint:fix": "yarn run lint -- --fix",
         "pretest:cov": "yarn run lint",
         "test:cov": "jest --coverage",
-        "test": "jest --watch"
+        "test": "jest --watch",
+        "precommit": "yarn test:cov",
+        "release:prerelease": "./scripts/release.sh prerelease",
+        "release": "./scripts/release.sh patch",
+        "release:preminor": "./scripts/release.sh preminor",
+        "release:minor": "./scripts/release.sh minor",
+        "release:premajor": "./scripts/release.sh premajor",
+        "release:major": "./scripts/release.sh major"
     },
     "dependencies": {
         "tslib": "^1.9.0"
@@ -46,6 +53,7 @@
         "babel-jest": "^23.4.0",
         "camelcase": "^4.1.0",
         "conventional-changelog-cli": "^2.0.5",
+        "husky": "^1.0.0-rc.13",
         "jest": "^23.5.0",
         "rollup": "^0.65.0",
         "rollup-plugin-sourcemaps": "^0.4.2",
