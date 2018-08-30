@@ -17,6 +17,7 @@ Additionally, it comes bundled with [TypeScript](https://www.typescriptlang.org)
 
 
 ### Installation
+----------------
 You can install this package from [NPM](https://www.npmjs.com):
 ```bash
 npm add crypto-uid
@@ -31,6 +32,7 @@ yarn add crypto-uid
 
 
 ### Usage
+---------
 Generate a random UID:
 ```ts
 import uid from 'crypto-uid';
