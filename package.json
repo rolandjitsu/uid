@@ -40,7 +40,7 @@
             "prerelease": "yarn test:cov"
         }
     },
-    "dependencies": {
+    "peerDependencies": {
         "tslib": "^1.9.0"
     },
     "devDependencies": {

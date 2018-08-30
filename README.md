@@ -27,6 +27,8 @@ Or with [Yarn](https://yarnpkg.com/en):
 yarn add crypto-uid
 ```
 
+**NOTE**: For non ES6 users, you need to make sure that [tslib](https://github.com/Microsoft/tslib) is available.
+
 
 ### Usage
 Generate a random UID:
