@@ -28,14 +28,31 @@ Or with [Yarn](https://yarnpkg.com/en):
 yarn add crypto-uid
 ```
 
-**NOTE**: For non ES6 users, you need to make sure that [tslib](https://github.com/Microsoft/tslib) is available.
+#### CDN
+For CDN, you can use [unpkg](https://unpkg.com):
+
+[https://unpkg.com/crypto-uid/dist/bundles/crypto-uid.umd.min.js](https://unpkg.com/crypto-uid/dist/bundles/crypto-uid.umd.min.js)
+
+The global namespace for crypto-uid is `cryptoUid`:
+```js
+const id = cryptoUid(6);
+```
 
 
 ### Usage
 ---------
+
+#### ES6
 Generate a random UID:
 ```ts
 import uid from 'crypto-uid';
+const id = uid(6);
+```
+
+#### CommonJS
+Generate a random UID:
+```ts
+const uid = require('crypto-uid');
 const id = uid(6);
 ```
 
