@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>crypto-uid e2e</title>
+  </head>
+  <body>
+    <!-- Import the built bundle, so these tests exercise the shipped artifact in a real browser. -->
+    <script type="module">
+      import defaultUid, {uid} from "/dist/index.js";
+
+      window.__uid = uid;
+      window.__defaultUid = defaultUid;
+      window.__ready = true;
+    </script>
+  </body>
+</html>
